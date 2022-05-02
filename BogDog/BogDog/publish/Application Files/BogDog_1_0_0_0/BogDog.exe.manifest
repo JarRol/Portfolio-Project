@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="BogDog.exe" version="1.0.0.0" publicKeyToken="9aa3dcfec281dce0" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="BogDog" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="BogDog.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BogDog.exe" size="52736">
+      <assemblyIdentity name="BogDog" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>qWh6xxZd2wsYSC+RlGZnkqYGSaoKxQqKE97GYCQlhaQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="BogDog.exe.config" size="186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>h0UeIdteCM29dGVw07LmHp593fPbh0IN11GyN3f2uRA=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=CISP\J_Rolon" issuerKeyHash="d6d4d1d0f2dc15b7c1499da758690b2313c16e40" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>WuG+MC8aRQ6y75u4KgwY5fin8uF1emQ3ARYvPK8dbnY=</DigestValue></Reference></SignedInfo><SignatureValue>zpo+/2DTl1XgXikA47lvMWlSIT3nYr9a2AL4sOE3n8oFbkrR/CTd6FynP9I4aUP/xsHHscnxWHChwVffScdQdZjGekWmA7j/5Nyl51v0h3m0YekWa/MJf7BEPyV3smk5P8styAgcdz61nCGP+cMb7gy+/lPi9iMGPiUkH6UvRrc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>5zSmMBDrMLPHTlWrVOllnkZwKjNY3wwjU1ueMQj+ejKHbSyHRN13Pi2hNy3MseOuY4h7mbDMAHafHUVJNh4m10PO0cM1w/0fvMbgaTUA1YCftvT8PfVUCXj5tHTnqw2iiTiYxje7uJsolFTcNJFlJIhBRJDFb+8Yh43aicvChs8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="766e1daf3c2f160137647a75e1f2a7f8e5180c2ab89befb20e451a2f30bee15a" Description="" Url=""><as:assemblyIdentity name="BogDog.exe" version="1.0.0.0" publicKeyToken="9aa3dcfec281dce0" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=CISP\J_Rolon</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>eUP5n6EJBQMuDgyJtQ2FQQkT0awVQ/9qEQtajF3f8OI=</DigestValue></Reference></SignedInfo><SignatureValue>nDPQT+ojS2uf4sGYmOuqNv1NTKYaQd5pyq3+STA9Pak1Flxy6512GYp2hPeMxbwm9gKy9rEN1u1MiZR7SGQAwYlIlATpQ/laKVT6R/YqSSINCRY7GdZyJtTFFb/Lts6vY/ieX3qSGhW7VHn+OS8/mEmX/HCAMUssg/Ded+TN468=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>5zSmMBDrMLPHTlWrVOllnkZwKjNY3wwjU1ueMQj+ejKHbSyHRN13Pi2hNy3MseOuY4h7mbDMAHafHUVJNh4m10PO0cM1w/0fvMbgaTUA1YCftvT8PfVUCXj5tHTnqw2iiTiYxje7uJsolFTcNJFlJIhBRJDFb+8Yh43aicvChs8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIByTCCATKgAwIBAgIQLKq5fP6CJp1LXIZyIE1KQTANBgkqhkiG9w0BAQsFADAjMSEwHwYDVQQDHhgAQwBJAFMAUABcAEoAXwBSAG8AbABvAG4wHhcNMTYwMzIxMTYzNjQzWhcNMTcwMzIxMjIzNjQzWjAjMSEwHwYDVQQDHhgAQwBJAFMAUABcAEoAXwBSAG8AbABvAG4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOc0pjAQ6zCzx05Vq1TpZZ5GcCozWN8MI1NbnjEI/noyh20sh0Tddz4toTctzLHjrmOIe5mwzAB2nx1FSTYeJtdDztHDNcP9H7zG4Gk1ANWAn7b0/D31VAl4+bR056sNook4mMY3u7ibKJRU3DSRZSSIQUSQxW/vGIeN2onLwobPAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAxRSyKoxmmHl5/3AunhV1Xs6IF1ZY8IIfv2xF3J0+rV1dZGZV08sdFvpm4OIwTPIcDchlqFgnOZ7YjU+/3a91X3VQN0xy4JfIJEKNomTOjtQUxc3b3US/3MUlr5sCF7GVqHMZBXFBjSYwxudEq3E1EpNKcxN04CMw6i6Vt8WS6xE=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
