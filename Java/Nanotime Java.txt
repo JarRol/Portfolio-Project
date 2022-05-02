@@ -1,0 +1,5 @@
+long startTime = system.nanoTime();
+
+long endTime = system.nanoTime();
+
+double elapsed = Double.parsedouble( (endTime - startTime) / 1000);
